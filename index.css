@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root{
+    --height: 100px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+#simulation{
+    width: 100%;
+    height: 100vh;
+}
+
+
+/* header section Code */
+.title{
+    background: black;
+    height: var(--height);
+    width: 100%;
+}
+.title h1{
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    padding: calc((var(--height) - 40px) / 2) 0px;
+}
+
+/* action section Code */
+.actions{
+    height: var(--height);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background: orange;
+}
+.actions .action-btn{
+    height: 50px;
+    width: 100px;
+    font-size: 30px;
+    padding: 3px;
+    outline: none;
+    cursor: pointer;
+    margin: calc((var(--height) - 50px) / 2) 0px;
+    transition: .3s all;
+}
+.actions .action-btn:hover{
+    background: red;
+    color: white;
+}
+.actions p{
+    font-size: 25px;
+    margin: calc((var(--height) - 25px) / 2) 0px;
+}
+
+/* Simulator section Code */
+.simulator{
+    width: 100%;
+    height: auto;
+}
+
+.simulator .block{
+    width: 45%;
+    margin: 20px auto;
+}
+.simulator .box{
+    max-height: 60vh;
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    line-height: 35px;
+}
+.simulator .content{
+    margin: 20px 0;
+    display: grid;
+}
+
+
+.simulator .content p, .simulator .content .shape{
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.simulator .content .shape{
+    margin-top: 10px;
+    border-width: 9px;
+    border-style: solid;
+    padding: 10px 90px;
+    border-radius: 15px;
+}
+
+
+/* to hide code before starting simulation
+
+#hide{
+    visibility: hidden;
+}
+
+*/

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="index.css" rel="stylesheet" type="text/css">  
+    <title>Sum of Digits of number</title>
+</head>
+<body>
+    <div id="simulation">
+    
+        <!--HEADER-->
+        <div class="title">
+            <h1>Sum of Digits of Numbers</h1>
+        </div>
+        
+        <!--Actions-->
+        <div class="actions">
+            <button id="start" class="action-btn">Start</button>
+            <p id="input"></p>
+            <p id="output"></p>
+            <button id="reset" class="action-btn">Reset</button>
+        </div>
+        
+        <!--Simulator-->
+        <div class="simulator">
+
+            <div class="row">
+
+                <div class="block">
+                    <!--Code Block-->
+                    <center>
+                        <h1 class="sec-header">Code</h1>
+                    </center>
+                    <!--Code For Sum Of Digits-->
+                    <div class="box" id="hide">
+                        <div class="" id="line1">
+                            #include &ltstdio.h&gt
+                            <div class="comment"></div>
+                        </div>
+                        
+                        <div id="line2">
+                            int main() {
+                            <div class="comment"></div>
+                        </div>
+                        
+                        <div id="line3" style="padding-left: 5%;">
+                            int num=0, sum=0, remainder=0;
+                            <div class="comment"></div>
+                        </div>
+                        
+                        <div id="line4" style="padding-left: 5%;">
+                            printf(" Enter a number : ");
+                            <div class="comment"></div>
+                        </div>
+                        
+                        <div id="line5" style="padding-left: 5%;">
+                            scanf("%d", &num);
+                            <div class="comment">
+                                <input class="" id="inputno" type="text" placeholder="Enter a number">
+                                <button class="submitbtn" id="submitbtn"><b>Submit</b></button>
+                            </div>
+                            
+                        </div>
+                        
+                        <div id="line6" style="padding-left: 5%;">
+                            while(num>0) {
+                            <div class="comment"></div>
+                        </div>
+                        
+                        <div id="line7" style="padding-left: 10%;">
+                            remainder = num%10;
+                            <div class="comment"></div>
+                        </div>
+                        
+                        <div id="line8" style="padding-left: 10%;">
+                            sum = sum + remainder;
+                            <div class="comment"></div>
+                        </div>
+                        
+                        <div id="line9" style="padding-left: 10%;">
+                            num = num/10;
+                            <div class="comment"></div>
+                        </div>
+                        
+                        <div id="line10" style="padding-left: 5%;">
+                            }
+                            <div class="comment"></div>
+                        </div>
+                        
+                        <div id="line11" style="padding-left: 5%;">
+                            printf("Sum of digits in number : %d", sum);
+                            <div class="comment"></div>
+                        </div>
+                        
+                        <div class="" id="line12" >
+                            }
+                        </div>
+                        
+                    </div>
+                    <!--END Code Block-->
+                </div>
+                <div class="block">
+                    <!--Execution Block-->
+                    <center>
+                        <h1 class="sec-header">
+                            Execution
+                        </h1>
+                    </center>
+                    
+                    <div class="box">
+                        <!--Area to Dislay Output-->
+                        <div class="content">
+                            <p>Number</p>
+                            <div id="display-num" class="shape">0</div>
+                        </div>
+                        
+                        <div class="content">
+                            <p>Remainder</p>
+                            <div id="display-rem" class="shape" >0</div>
+                        </div>
+                        
+                        <div class="content">
+                            <p>Sum</p>
+                            <div id="display-sum" class="shape">0</div>
+                        </div>
+                    </div>
+                    <!--END Execution Block-->
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+</html>
